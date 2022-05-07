@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        button {
+            width: 100px;
+            height:20px;
+            border-radius: 10px;
+            margin: 10px;
+        } 
+
+        table {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Expense</h1>
+    <input type="text" name="item" id="item-name">
+    <input type="number" name="cost" id="item-cost">
+    <button class='add-expense' type="submit">Add Expense</button>
+    <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th>item</th>
+            <th>cost (£)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>null</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
